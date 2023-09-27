@@ -1,0 +1,198 @@
+@media(max-width:1300px) {
+    .sec2 {
+        padding: 100px;
+    }
+
+    .from {
+        width: 100%;
+    }
+
+    .regiter {
+        width: 100%;
+    }
+
+    .ledi3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .most {
+        padding: 10px;
+
+    }
+
+    .most h1 {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .section5 {
+        padding: 0px 0px;
+        padding-top: 30px;
+    }
+
+    .wh1 {
+        padding: 20px;
+    }
+
+    .wh2 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .student {
+        padding: 120px 0px;
+
+    }
+
+    .footer {
+        padding: 20px 7px;
+    }
+
+}
+
+@media(max-width:1025px) {
+    .banner {
+        background-position-x: 70%;
+    }
+
+    .home a,
+    .phone {
+        font-size: 12px;
+    }
+
+    .nav2 {
+        width: 45%;
+    }
+
+    .ban2 {
+        padding-left: 120px;
+        padding-top: 75px;
+    }
+
+    .w3layouts {
+        width: 60%;
+    }
+
+
+    .section1 {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+    .section1 .the,
+    .libray {
+        width: 100%;
+
+    }
+
+    .sec2 {
+        flex-direction: column;
+        gap: 0;
+        padding: 100px;
+    }
+
+    .from {
+        width: 100%;
+    }
+
+    .regiter {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sect4 {
+        width: 50%;
+    }
+
+
+}
+
+
+@media(max-width:800px) {
+
+    .home a,
+    .phone,
+    .na3-1 {
+        font-size: 13px;
+        display: none;
+    }
+
+    .nav2 {
+        width: 60%;
+    }
+
+    .nav3 {
+        flex-direction: column;
+        padding-top: 20px;
+
+    }
+
+    .na3-2 {
+        display: block;
+    }
+
+    .ban2 {
+        padding-left: 100px;
+        padding-top: 55px;
+    }
+
+    .w3layouts {
+        width: 100%;
+
+    }
+
+    .ban3 {
+        padding-top: 0px;
+    }
+
+
+    .sec2 {
+        flex-direction: column;
+        gap: 0;
+        padding: 50px;
+    }
+
+    .from {
+        width: 100%;
+    }
+
+    .regiter {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 20px 7px;
+    }
+
+    .footsend1 {
+        width: 65%;
+    }
+
+    .aboutmain {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .us,
+    .info,
+    .navi {
+        width: 100%;
+    }
+
+    .whiteliti {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footsend2 a {
+        padding: 15px 40px;
+    }
+
+}

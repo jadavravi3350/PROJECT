@@ -1,0 +1,782 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background: url(../image/banner\ 1.jpg);
+    background-size: cover;
+}
+
+.ban1 {
+    display: flex;
+}
+
+.nav1 {
+    width: 33.33%;
+    padding: 5px 0px 5px 30px;
+}
+
+.nav1 a {
+    color: white;
+    font-size: 40px;
+}
+
+.nav1 h1::first-letter {
+    color: #0accff;
+}
+
+.nav2 {
+    width: 40%;
+    padding-top: 35px;
+}
+
+.menu {
+    display: flex;
+}
+
+.home {
+    margin-left: 25px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .3s;
+}
+
+
+.front,
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    transform: rotatex(0deg) translateZ(10px);
+    position: relative;
+}
+
+
+.top {
+    transform: rotatex(-90deg) translateZ(10px);
+    position: absolute;
+}
+
+.home:hover {
+    transform: rotatex(90deg) translateZ(0px);
+
+}
+
+
+.home a,
+.phone {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.home a:hover {
+    color: #ec9114;
+}
+
+.wq {
+    position: relative;
+}
+
+.fa-caret-down {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    color: white;
+    font-size: 10px;
+    transform: rotatex(-90deg);
+}
+
+.nav3 {
+    width: 26%;
+    color: white;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.na3-1 {
+    width: 80%;
+    text-align: center;
+}
+
+.na3-2 {
+    width: 10%;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ec9114;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    padding-right: 35px;
+    padding-left: 8px;
+
+}
+
+
+.ban2 * {
+    color: white;
+}
+
+
+.ban2 {
+    padding-top: 230px;
+    padding-left: 280px;
+}
+
+
+.w3layouts {
+    border: 2px solid white;
+    border-left: 2px solid transparent;
+    width: 50%;
+    padding-top: 42px;
+}
+
+.w3layouts .left {
+    transform: translate(-100px, 0px);
+}
+
+.w3 {
+    position: relative;
+}
+
+
+.mini1 {
+    height: 20px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    left: -1.5px;
+    top: -1.5px;
+}
+
+
+.mini2 {
+    height: 20px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    left: -1.5px;
+    bottom: -1.5px;
+}
+
+.w3 p,
+h1 {
+
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.w3 p span {
+    background: #ec9114;
+    padding: 8px;
+}
+
+.w3 h1 {
+    font-size: 24px;
+    animation: edu 2s linear 3;
+}
+
+@keyframes edu {
+    from {
+        opacity: 0;
+        transform: translate(-150px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50px, 0px);
+    }
+
+}
+
+.w3 h1 b {
+    animation: ravi .4s linear infinite alternate;
+}
+
+@keyframes ravi {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.nulla {
+    color: aliceblue;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.ban3 {
+    display: flex;
+    padding-top: 120px;
+
+}
+
+.ban3-1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+
+}
+
+.button {
+    border: 1px solid white;
+    height: 90px;
+    width: 40px;
+    border-radius: 30px;
+
+}
+
+.dot {
+    background-color: #0accff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transform: translate(14px, 10px);
+    animation: dot 2s ease-out infinite;
+}
+
+@keyframes dot {
+    0% {
+        transform: translate(14px, 10px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(14px, 40px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(14px, 70px);
+        opacity: 0;
+    }
+}
+
+.facebook {
+    display: flex;
+    gap: 5px;
+
+}
+
+.face,
+.twit,
+.goog {
+    border: 3px solid white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.face a {
+    color: rgb(81, 106, 159);
+}
+
+.face:hover {
+    background: rgb(81, 106, 159);
+}
+
+.twit a {
+    color: #0accff;
+}
+
+.twit:hover {
+    background: #0accff;
+}
+
+.goog a {
+    color: rgb(221, 75, 57);
+}
+
+.goog:hover {
+    background: rgb(221, 75, 57);
+}
+
+.facebook a:hover {
+    color: white;
+}
+
+/*=================== navbar closed =====================*/
+
+
+
+/*=================== section1 start ====================*/
+
+
+.section1 {
+    display: flex;
+    gap: 10px;
+    padding-left: 200px;
+
+}
+
+.the {
+    width: 55%;
+}
+
+.libray {
+    width: 31%;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+
+}
+
+.the {
+    display: flex;
+    padding: 20px;
+    gap: 80px;
+
+}
+
+.downarrow {
+    width: 15%;
+    padding-top: 100px;
+
+}
+
+.turn {
+    width: 85%;
+    padding-top: 30px;
+}
+
+.liti {
+    border-right: 3px solid rgb(236, 145, 20);
+    font-size: 20px;
+
+}
+
+.turn span {
+    color: #0accff;
+}
+
+.turn * {
+    padding-top: 20px;
+    line-height: 27px;
+}
+
+.turn p {
+    color: #999;
+}
+
+.turn a {
+    text-decoration: none;
+    padding: 20px 60px;
+    text-align: center;
+    font-size: 15px;
+    outline: 2px solid red;
+}
+
+
+.libray img {
+    animation: imghover 8s linear infinite alternate;
+}
+
+@keyframes imghover {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(-820px);
+    }
+}
+
+/*================== section 1 cloed ================= */
+
+
+/********** section 2 start  *********/
+.section2 {
+    background: url(../image/section\ 2\ img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec2 {
+    display: flex;
+    padding: 70px 200px;
+    gap: 100px;
+
+}
+
+.from {
+    width: 40%;
+    background-color: rgba(10, 206, 255, 0.33);
+    padding-bottom: 30px;
+}
+
+.regiter {
+    width: 60%;
+
+}
+
+input {
+    width: 90%;
+    padding: 15px 20px 15px 20px;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.send {
+    font-size: 20px;
+    background: #ec9114;
+    transition: 1s;
+}
+
+.send:hover {
+    background: #0accff;
+}
+
+.regiter h1 {
+    padding-top: 100px;
+    font-size: 40px;
+    color: white;
+}
+
+.regiter p {
+    padding-top: 40px;
+    color: white;
+}
+
+.meet {
+    background-color: white;
+
+}
+
+/********************* section2 cloed ********************/
+
+
+
+/********************* section3 start ********************/
+
+.section3 {
+    width: 100%;
+    padding-left: 70px;
+}
+
+.ledi3 {
+    width: 90%;
+    display: flex;
+}
+
+.jane {
+    width: inherit;
+    text-align: center;
+}
+
+.jane * {
+    padding: 6px;
+}
+
+.jane a {
+    border-radius: 45%;
+    color: red;
+}
+
+.jane a:hover {
+    color: white;
+    background-color: red;
+}
+
+.jane .face1:hover {
+    background-color: #048bad;
+    color: white;
+
+}
+
+.most {
+    background-color: #0accff;
+    padding: 15px;
+}
+
+.most h1 {
+    border: 3px solid white;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+
+/***************** section 3 cloed ***********************/
+
+
+
+/***************** section 4 start ***********************/
+
+
+.section4 {
+    display: flex;
+
+}
+
+.sect4 {
+    width: 25%;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.white {
+
+    height: 500px;
+    width: 600px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.box {
+    height: 255px;
+    width: 385px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 220px;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(1, 1);
+    border: 1px solid white;
+    box-shadow: 0 0 10px red;
+
+}
+
+.sect4:hover .white {
+    opacity: .7;
+}
+
+.sect4:hover .box {
+    transform: scale(.5, .2);
+    opacity: 1;
+    font-size: 30px;
+}
+
+
+/***************** section 4 cloed ***********************/
+
+
+/***************** section 5 strat ***********************/
+
+
+.section5 {
+    padding: 50px 150px;
+}
+
+
+.what {
+    display: flex;
+}
+
+.wh1 {
+    width: 20%;
+    padding: 50px 50px;
+}
+
+.wh2 {
+    width: 60%;
+}
+
+.don05 p {
+    border-right: 3px solid #ec9114;
+    padding: 5px;
+}
+
+.wh2 p,
+h1 {
+    padding-top: 10px;
+}
+
+.student {
+    display: flex;
+    padding: 80px 200px;
+    gap: 20px;
+}
+
+.rosy {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+}
+
+.rosy p,
+h2 {
+    padding: 20px;
+    line-height: 20px;
+}
+
+.sect5img1 img {
+    position: absolute;
+    top: -25%;
+    left: 35%;
+}
+
+/***************** section 5 cloed ***********************/
+
+
+/****************** footer start *************************/
+
+.footer {
+    background: url(../image/footer\ back-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 200px;
+}
+
+.enter {
+    display: flex;
+
+}
+
+.footsend1 {
+    width: 80%;
+}
+
+.footsend1 input {
+    font-size: 25px;
+    background: fixed;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.footsend2 {
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footsend2 a {
+    text-decoration: none;
+    padding: 20px 60px;
+    color: white;
+    background-color: #ec9114;
+    transition: 1s;
+}
+
+.footsend2 a:hover {
+    background-color: #0accff;
+}
+
+.aboutmain {
+    display: flex;
+
+}
+
+.aboutmain h2 {
+    color: white;
+}
+
+.aboutmain p {
+    color: #999;
+}
+
+.aboutmain a {
+    color: #999;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.aboutmain a:hover {
+    color: #ec9114;
+}
+
+
+.us,
+.info,
+.navi {
+    width: 33.33%;
+}
+
+.info span {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.whiteliti {
+    border-top: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.c {
+    color: #999;
+}
+
+.c a {
+    color: #0accff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.c a:hover {
+    color: #ec9114;
+}
+
+.f {
+    display: flex;
+}
+
+.f1 a {
+    padding: 15px;
+    font-size: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.f1 a:hover {
+    color: white;
+}
+
+.f1 .fa-brands:hover {
+    background-color: #048bad;
+}
+
+.f1 .g {
+    color: red;
+}
+
+.f1 .g:hover {
+    background-color: red;
+}
+
+/****************** footer closed *************************/
