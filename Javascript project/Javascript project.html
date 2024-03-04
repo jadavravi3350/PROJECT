@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main { 
+            display: grid;
+            grid-template-columns: 10fr 40fr;
+        }
+
+        .one {
+            line-height: 20px;
+        }
+
+        .q1 {
+            height: 400px;
+            width: 60%;
+            margin: 50px auto;
+            border: 4px solid black;
+            padding: 4px;
+            overflow: hidden;
+        }
+        
+
+        .q2 {
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px auto;
+        }
+
+        .q2 button {
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>(1) Create password show and hide </h2>
+
+    <br><br>
+
+        Enter Password : <input type="password" id="pass"> <br><br>
+
+        <input type="checkbox" onclick="cki()"> Show password
+
+    <script>
+
+        var java = document.getElementById("pass")
+
+        function cki() 
+        {
+            if (java.type == "password") 
+            {
+                java.type = "text"
+            }
+
+            else
+            {
+                java.type = "password"
+            }
+
+        }
+    </script>
+
+    <br><br>
+
+<h2>(2) Create basic math operation</h2>
+
+    == >
+    <br><br>
+
+    Enter 1st number : <input type="number" id="sec1"> <br><br>
+
+    Enter 2st number : <input type="number" id="sec2"> <br><br>
+
+    <input type="submit" value="+" onclick="plus()">
+    <input type="submit" value="-" onclick="mines()">
+    <input type="submit" value="*" onclick="guniya()">
+    <input type="submit" value="/" onclick="bhagiya()">
+    <input type="submit" value="%" onclick="taka()">
+
+    <h2>Answer is : <span id="hove"></span> </h2>
+
+    <script>
+
+        var nid = document.getElementById("sec1")
+
+        var nidde = document.getElementById("sec2")
+
+        var sipi = document.getElementById("hove")
+
+        function plus() 
+        {
+            sipi.innerHTML = Number(nid.value) + Number(nidde.value)
+        }
+
+        function mines()
+        {
+            sipi.innerHTML = nid.value - nidde.value
+        }
+
+        function guniya()
+        {
+            sipi.innerHTML = nid.value * nidde.value
+        }
+
+        function bhagiya()
+        {
+            sipi.innerHTML = nid.value / nidde.value
+        }
+
+        function taka()
+        {
+            sipi.innerHTML = nid.value % nidde.value
+        }
+
+    </script>
+
+    <br><br>
+
+
+<h2>(3) Marksheet Result in javascript</h2>
+
+    <br><br>
+
+    <div class="main">
+
+        <div class="one">
+
+
+            1. C Language : <br><br>
+
+            2. C++ Language : <br><br>
+
+            3. Database : <br><br>
+
+            4. HTML : <br><br>
+
+            5. CSS : <br><br>
+
+            6. php : <br><br>
+
+            7. Core java : <br><br><br><br>
+
+
+        </div>
+
+
+        <div class="sec">
+
+
+            <input type="number" id="p1"> <br><br>
+
+            <input type="number" id="p2"> <br><br>
+
+            <input type="number" id="p3"> <br><br>
+
+            <input type="number" id="p4"> <br><br>
+
+            <input type="number" id="p5"> <br><br>
+
+            <input type="number" id="p6"> <br><br>
+
+            <input type="number" id="p7"> <br><br>
+
+            <input type="submit" value="Result" id="re" onclick="jay()">
+
+            input ma min and max number form tag ke bina work nahi karte 
+
+        </div>
+
+    </div>
+
+    <div class="thire">
+
+        <span><b>Total is :</b> <span id="sp">0 </span><span>/ 350</span></span>
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <span><b>Percentage is : <span id="prese"> 0 </span> %</b></span>
+
+    </div>
+
+    <script>
+
+        var nil1 = document.getElementById("p1")
+        var nil2 = document.getElementById("p2")
+        var nil3 = document.getElementById("p3")
+        var nil4 = document.getElementById("p4")
+        var nil5 = document.getElementById("p5")
+        var nil6 = document.getElementById("p6")
+        var nil7 = document.getElementById("p7")
+
+        var resl = document.getElementById("re")
+
+        var spiv = document.getElementById("sp")
+
+        var secon = document.getElementById("prese")
+
+        function jay() 
+        {
+            if (nil1.value, nil2.value, nil3.value, nil4.value, nil5.value, nil6.value, nil7.value == "")
+            {
+                alert("Pleas enter the mark")
+            }
+
+            else
+            {
+                sp.innerHTML = Number(nil1.value) + Number(nil2.value) + Number(nil3.value) + Number(nil4.value) + Number(nil5.value) + Number(nil6.value) + Number(nil7.value)
+
+                spiv.style.color = "blue"
+                secon.style.color = "blue"
+
+                secon.innerHTML = parseInt(spiv.innerHTML * 100 / 350)
+            }
+
+        }
+    </script>
+
+    <br><br>
+
+    <h2>(4) Slider</h2>
+
+    <div class="q1">
+
+        <img id="my" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="100%" height="100%">
+       
+
+    </div>
+
+    <div class="q2">
+        <!-- <button onclick="Left()">Left</button> -->
+        <button onclick="next()">Next</button>
+    </div>
+
+    <script>
+
+       var ravi =document.getElementById("my");
+       
+        function next()
+        {
+            console.log(ravi.src)
+
+            if( ravi.src.match("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"))
+            {
+                ravi.src = "https://img.freepik.com/premium-photo/colorful-painted-portrait-elephant-s-face-with-vivid-hues-showcasing-majestic-beauty-charm-this-magnificent-animal_674594-4024.jpg"
+            }
+
+            
+           else if( ravi.src.match("https://img.freepik.com/premium-photo/colorful-painted-portrait-elephant-s-face-with-vivid-hues-showcasing-majestic-beauty-charm-this-magnificent-animal_674594-4024.jpg"))
+            {
+                ravi.src = "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg"
+            }
+
+            else if( ravi.src.match("https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg"))
+            {
+                ravi.src = "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+            }
+
+            else if( ravi.src.match("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"))
+            {
+                ravi.src = "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            }
+
+            else
+            {
+                ravi.src ="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
