@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    border: 1px solid;
+}
+
+.New {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.New ul li {
+    list-style: none;
+    display: inline;
+}
+
+.New ul li * {
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid;
+    padding: 40px 70px;
+}
+
+.New ul li *:hover {
+    background-color: black;
+    color: #D6FF38;
+}
+
+.SHOP,
+.Everyone2 {
+    background-color: greenyellow;
+}
+
+.Everyone1 {
+    font-size: 70px;
+
+}
+.foters1
+{
+   text-wrap:wrap;
+}
+
+
+/*  */
+
+.shop-women {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Oviya_Helen_in_2018.jpg/640px-Oviya_Helen_in_2018.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+.shop-new {
+    background: url("https://w0.peakpx.com/wallpaper/277/958/HD-wallpaper-ronaldo-in-ground-wearing-white-dress-ronaldo.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+.shop-men {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/8/8d/Sunil_Chhetri_Indian_Football_Player.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.shop-all * {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(172, 255, 47, 0.441));
+    height: inherit;
+    opacity: 0;
+    font-size: 28px;
+    text-align: center;
+    align-content: end;
+
+}
+
+.shop-all *:hover {
+    opacity: 1;
+}
+
+/*  */
+.OFF1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.942), rgba(182, 255, 47, 0.912));
+}
+
+.OFF1 div b {
+    font-size: 70px;
+}
+
+.OFF1 div h1 {
+    font-size: 100px;
+    font-weight: bolder;
+
+}
+
+.OFF2 {
+    background: url("https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1700944/2019/6/8/488007ef-c65e-4a2f-a92b-65b6846894861559989274078-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg");
+    height: 750px;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+
+.offcanvas {
+    position: relative;
+}
+
+.Totalmoney {
+    background-color: #D6FF38;
+    /* padding: 50px 0; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+  .superNav {
+    font-size:13px;
+  }
+  .form-control {
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  @media screen and (max-width:540px){
+    .centerOnMobile {
+      text-align:center
+    }
+  }

@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "first": "Ravi",
+      "last": "Jadav",
+      "email": "r@gmail.com",
+      "password": "00r"
+    },
+    {
+      "id": "ab01",
+      "first": "durgesh",
+      "last": "jadav",
+      "email": "d@gmail.com",
+      "password": "00d"
+    },
+    {
+      "id": "8c31",
+      "first": "csadff",
+      "last": "afdf",
+      "email": "c@gmail.com",
+      "password": "c@gmail.com"
+    },
+    {
+      "id": "a621",
+      "first": "nilesh",
+      "last": "kanzariya",
+      "email": "kanzariyanilesh0007@gmail.com",
+      "password": "nilesh@4615"
+    }
+  ]
+}
