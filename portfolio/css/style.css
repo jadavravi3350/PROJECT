@@ -40,7 +40,18 @@ body
 
 .nav1
 {
-    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+
+.fa-bars-staggered
+{
+    display: none !important;
+    color: red;
+    cursor: pointer;
 }
 
 .nav1 a
@@ -77,6 +88,7 @@ body
     color: #eb5424;
 
 }
+
 
 .john *
 {
@@ -438,3 +450,4 @@ input:hover,textarea:hover,.anc:hover
     transition: 1s;
     color: white;
 }
+

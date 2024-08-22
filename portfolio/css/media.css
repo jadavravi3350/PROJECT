@@ -19,9 +19,25 @@
         display: none;
     }
 
+    .nav2 b
+    {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .fa-bars-staggered
+    {
+        display: block !important;
+    }
+
     .mywork2 {
         flex-wrap: wrap;
         gap: 0;
+    }
+
+    .nav1
+    {
+        width: 100%;
     }
 
     .work,
