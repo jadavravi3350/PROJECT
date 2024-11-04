@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #6DC8ED !important;
+  transition: 0.5s;
+}
+
+form input,
+textarea {
+  background: #ede9e993 !important;
+}
+
+/*  */
+
+.Distributediv1 {
+  background: url("https://static.wixstatic.com/media/bfcb9b_e29d4e3d0a884e2db0d947d3dfbf6f62~mv2.jpg/v1/fill/w_980,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bfcb9b_e29d4e3d0a884e2db0d947d3dfbf6f62~mv2.jpg");
+  height: 75dvh;
+  width: 100%;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+}
+
+.Poligon1Advertise {
+  clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+}
+
+
+.billboard01 h1{
+  font-size: 115px;
+}
+
+  @media (max-width: 700px) {
+    .billboard01 h1{
+      font-size: 50px;
+    }
+  }
